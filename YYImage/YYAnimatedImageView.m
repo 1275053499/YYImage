@@ -526,6 +526,7 @@ typedef NS_ENUM(NSUInteger, YYAnimatedImageType) {
 }
 
 - (void)displayLayer:(CALayer *)layer {
+//     ios 14 黑屏问题
    UIImage *currentFrame = _curFrame;
     if (!currentFrame) {
     currentFrame = self.image;
